@@ -1,0 +1,11 @@
+executable = run.sh
+log = job$(process).log
+output = job$(process).out
+error = job$(process).err
+getenv = True
+should_transfer_files = yes
+when_to_transfer_output = on_exit
+RequestCpus = 10
+RequestMemory = 16000
+environment = "MYFILE=$(myfile)"
+queue myfile matching files /gv0/Users/achihwan/phase2/ZprimeToTauTau_M-500_TuneCP5_14TeV-pythia8-tauola/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/*.root
