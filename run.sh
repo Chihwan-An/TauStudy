@@ -64,7 +64,7 @@ echo "=========================="
 cmsenv 
 
 
-
+'''
 cmsDriver.py Phase2 -s L1,L1TrackTrigger \
 --conditions auto:phase2_realistic_T33 \
 --geometry ExtendedRun4D110 \
@@ -82,7 +82,7 @@ cmsDriver.py Phase2 -s L1,L1TrackTrigger \
 
 #chmod +x rerunL1_cfg_$(basename "$MYFILE").py
 #cmsRun rerunL1_cfg_$(basename "$MYFILE").py
-
+'''
 echo "setup1 done"
 
 cmsDriver.py step2 --processName=HLTX \
